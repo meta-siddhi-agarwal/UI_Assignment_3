@@ -6,241 +6,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>MetaCube Parking System</title>
-
+    <title>Assignment_3</title>
 </head>
 
 <body>
-    <form>
 
-        <div class="navigation">
-            <nav>
-                <a href="#addEmp" class="navItems">Register employee</a>
-                <a href="#addEmp" class="navItems">Register vehicle</a>
-                <a href="#addEmp" class="navItems">Give feedback</a>
-                <a href="#addEmp" class="navItems">See pricing</a>
-
-            </nav>
-        </div>
-        
-        <div class="head">
-            <h1 style="text-align: center;" class="meta">meta</h1>
-            <h1 style="text-align: center;" class="cafe">park</h1>
-        </div>
-        
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBt35X0YC7vvMiYvLzKTy9IbaF6BqUOUgvGg&s"
-            alt="Parking system" class="parkingImage">
-
-        <div style="display: grid; " id="addEmp">
-            EMPLOYEE DETAILS
-
-            <div style="display: inline;">
-                <label>Enter your name</label>
-                <input type="text">
+    <!--will contain viewport image and details-->
+    <div class="viewport">
+        <div class="titleBar">
+            <div class="logoBar">
+                <img src="images/logo.png" alt="titleLogo" class="titleLogo">
             </div>
 
-            <div style="display: inline">
-                <label>Select Gender</label>
-                <input type="radio" name="Gender">Male</input>
-                <input type="radio" name="Gender">Female</input>
-                <input type="radio" name="Gender">Others</input>
+            <div class="nav">
+                <nav class="navBar">
+                    <a>Home</a>
+                    <a>Features</a>
+                    <a>Reviews</a>
+                    <a>Download</a>
+                </nav>
             </div>
 
-            <div style="display: inline;">
-                <label>Enter email</label>
-                <input type="email">
-
-            </div>
-
-            <div>
-                <label>Enter password</label>
-                <input type="password" minlength="8">
-
-
-            </div>
-
-            <div>
-                <label>Confirm password</label>
-                <input type="password" minlength="8">
-
-
-            </div>
-            <div>
-                <label>Enter contact no.</label>
-                <input type="number">
-
-
+            <div class="imagesTag">
+                <img src="images/facebook.png" alt="fbLogo" class="img">
+                <img src="images/instagram.png" alt="instaLogo" class="img">
+                <img src="images/google.png" alt="googleLogo" class="img">
             </div>
 
         </div>
 
-        <br>
-        <div style="display: grid" id="addVehicle">
-            VEHICLE DETAILS
-            <div style="display: inline;">
-                <label>Enter company name of the vehicle</label>
-                <input type="text">
+        <!--div tag for download button with images-->
+        <div class="phone">
+            <div class="details">
+                <h1>Get the most fun</h1>
+                <h1>weather app</h1>
+                <div class="button">
+                    <input type="button" value="Download">
+                    <input type="button" value="Features">
+                </div>
             </div>
-
-            <div style="display: inline;">
-                <label>Enter company model of the vehicle</label>
-                <input type="text">
-            </div>
-
-            <div style="display: inline">
-                <label>Select vehicle type</label>
-                <select>
-                    <option>Car</option>
-                    <option>Bike</option>
-                    <option>Cycle</option>
-
-
-                </select>
-
-            </div>
-
-            <div style="display: inline;">
-                <label>Enter vehicle number</label>
-                <input type="text">
-
-            </div>
-
             <div>
-                <label>Enter employee id</label>
-                <input type="text">
+                <img src="images/phone1.png" alt="phoneLogo" class="phoneImg">
             </div>
+        </div>
+    </div>
 
-            <div>
-                <label>Enter identification</label>
-                <textarea placeholder="Color, mark, visible accessory etc."></textarea>
-
-            </div>
-
+    <!--will contain main content-->
+    <div class="bodyClass">
+        <div class="features">
+            <h1>Perfect features</h1>
+            <h3> Only necessary </h3>
         </div>
 
-        <br>
+        <div class="iconsDesc">
 
-        <div style="display: block;" id="giveFeedback">
-            GIVE FEEDBACK
-
-            <div style="display: grid;">
-                <label>Enter your name</label>
-
-                <input type="text">
-
-            </div>
-
-            <div style="display: grid;">
-                <label>Enter your email</label>
-                <input type="email">
-            </div>
-
-            <div style="display: grid;">
-                <label>Enter your phone</label>
-                <input type="text">
-            </div>
-            <div style="display: grid;">
-                <label>Rate our service</label>
-                <select>
-                    <option>Excellent</option>
-                    <option>Good</option>
-                    <option>Neutral</option>
-                    <option>Poor</option>
-                    <option>Terrible</option>
-                </select>
-            </div>
-
-            <div style="display: grid;">
-                <label>Add comments</label>
-                <textarea></textarea>
-            </div>
-
-
-        </div>
-
-        <br>
-
-        <div style="display: inline-block;" id="seePrice">
-
-            <div style="display: inline-grid; align-items: start; border-style: solid; padding: 10px;">
-                <h2 style="align-items: center;">Cycle</h2>
-                <svg width="200" height="150">
-                    <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white">
-
-
-                    </circle>
-                    <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$100</text>
-                    <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
-                </svg>
-
-                <h3>$5 Daily</h3>
-                <h3>$100 Monthly</h3>
-                <h3>$500 Yearly</h3>
-
-                <div style="display: grid; align-items: end; border-style: solid; padding: 10px;">
-                    PURCHASE NOW
+            <!--usability details-->
+            <div class="iconFirst">
+                <img src="images/Icon 1.jpg" alt="usability">
+                <div class="titleWithDesc">
+                    <h3>Usability</h3>
+                    <p>Sometimes the simplest things are hardest to find.
+                        So we created a new line for everyday life </p>
                 </div>
             </div>
 
-
-
-
-            <div style="display: inline-grid; align-items: center; border-style: solid; padding: 10px;">
-                <h2 style="align-items: center;">MotorCycle</h2>
-                <svg width="200" height="150">
-                    <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white">
-
-
-                    </circle>
-                    <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$200</text>
-                    <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
-                </svg>
-
-                <h3>$10 Daily</h3>
-                <h3>$200 Monthly</h3>
-                <h3>$1000 Yearly</h3>
-
-                <div style="display: grid; align-items: end; border-style: solid; padding: 10px;">
-                    PURCHASE NOW
+            <!--parallaxEffect details-->
+            <div class="iconFirst">
+                <img src="images/Icon 2.jpg" alt="parallaxEffect">
+                <div class="titleWithDesc">
+                    <h3>Parallax Effect</h3>
+                    <p>Sometimes the simplest things are hardest to find.
+                        So we created a new line for everyday life </p>
                 </div>
             </div>
 
+            <!--unlimitedColors details-->
+            <div class="iconFirst">
+                <img src="images/Icon 3.jpg" alt="unlimitedColors">
+                <div class="titleWithDesc">
+                    <h3>Unlimited Colors</h3>
+                    <p>Sometimes the simplest things are hardest to find.
+                        So we created a new line for everyday life </p>
+                </div>
+            </div>
+        </div>
 
+        <!--for creating perspective images-->
+        <div class="scroll">
+            <img src="images/drag1.png" alt="img1" class="img1">
+            <img src="images/drag3.png" alt="img2" class="img2">
+            <img src="images/drag2.png" alt="img3" class="img3">
+            <img src="images/drag1.png" alt="img1" class="img4">
+            <img src="images/drag3.png" alt="img2" class="img5">
+        </div>
 
-            <div style="display: inline-grid; align-items: end; border-style: solid; padding: 10px;">
-                <h2 style="align-items: center;">Four Wheelers</h2>
-                <svg width="200" height="150">
-                    <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white">
+        <!--div tag for screenshots and bright images-->
+        <div class="screen">
+            <h1>Screenshots</h1>
+            <h3> The brightest images </h3>
+        </div>
 
+        <!--div tag for cloud-->
+        <div class="cloud">
+            <div class="phoneIcon">
+                <div class="temp">
+                    <h3>15&deg;</h3>
+                </div>
+                <img src="images/screen01.png" alt="cloud">
+                <div class="cloudy">
+                    <h3>Cloudy</h3>
+                </div>
+                <h1>Cloudy</h1>
+            </div>
 
-                    </circle>
-                    <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$500</text>
-                    <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
-                </svg>
+            <div class="cloudDesc">
+                <img src="images/cloud1.png" alt="cloudImg">
+                <h1>When the clouds</h1>
+                <p>Variable information on the air humidity, the
+                    feeling of the weather, and the ability to share this with your
+                    friends
+                </p>
+                <div class="circles">
+                    <div class="percent">
+                        <h3>95%</h3>
+                    </div>
+                    <div class="degree">
+                        <h3>9&deg;</h3>
+                    </div>
+                    <div class="stat">
+                        <h3>Rainy</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <h3>$20 Daily</h3>
-                <h3>$500 Monthly</h3>
-                <h3>$3500 Yearly</h3>
-
-                <div style="display: grid; align-items: end; border-style: solid; padding: 10px;">
-                    PURCHASE NOW
+        <!--div class for sunny-->
+        <div class="sunny">
+            <div class="cloudDesc">
+                <img src="images/sun1.png" alt="sunImg">
+                <h1>When the clouds</h1>
+                <p>Sometimes the simplest things are the hardest to find.
+                    So we created a new line for everyday life.
+                    Sometimes the simplest things</p>
+                <div class="circles">
+                    <div class="percent">
+                        <h3>95%</h3>
+                    </div>
+                    <div class="degree">
+                        <h3>9&deg;</h3>
+                    </div>
+                    <div class="stat">
+                        <h3>Rainy</h3>
+                    </div>
                 </div>
             </div>
 
+            <div class="phoneIcon sunnyPhone">
+                <div class="temp ">
+                    <h3>25&deg;</h3>
+                </div>
+                <img src="images/screen02.png" alt="cloud">
+                <div class="cloudy">
+                    <h3>Cloudy</h3>
+                </div>
+                <h1>Sunny</h1>
+            </div>
         </div>
 
+        <!--div class for rainy-->
+        <div class="rainy">
+            <div class="phoneIcon rainyPhone">
+                <div class="temp">
+                    <h3>9&deg;</h3>
+                </div>
+                <img src="images/screen03.png" alt="rainy">
+                <div class="cloudy rainyCircle">
+                    <h3>Rainy</h3>
+                </div>
+                <h1>Rainy</h1>
+            </div>
 
-        <br>
-
-
-
+            <div class="cloudDesc">
+                <img src="images/rainy1.png" alt="rainyImg">
+                <h1>When the rain</h1>
+                <p>Sometimes the simplest things are the hardest to find.
+                    So we created a new line for everyday life.
+                    Sometimes the simplest things
+                </p>
+                <div class="circles">
+                    <div class="percent">
+                        <h3>95%</h3>
+                    </div>
+                    <div class="degree">
+                        <h3>9&deg;</h3>
+                    </div>
+                    <div class="stat">
+                        <h3>Rainy</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style="display: flex;">
-            <input type="submit" value="SUBMIT">
+
+        <!--for creating reviews heading-->
+        <div class="reviewHeader">
+            <h1>What reviews are saying</h1>
+            <h3>Reviews</h3>
         </div>
-    </form>
 
+        <!--for creating reviews section-->
+        <div class="reviews">
 
+            <!--left comment sectiom-->
+            <div class="firstSection">
+                <!--first comment -->
+                <div>
+                    <i class="fa fa-quote-left"></i>
+                    <p>What art offers is space-a certain breathing room for the spirit.</p>
+                    <h6>John Updike</h6>
+                    <i class="fa fa-quote-right rightTranslate"></i>
+                </div>
+                <!--secondcomment -->
+                <div>
+                    <i class="fa fa-quote-left"></i>
+                    <p>The only courage that matters is the kind that gets you form one
+                        moment to the next.
+                    </p>
+                    <h6>Migon McLaughlin</h6>
+                    <i class="fa fa-quote-right rightTranslate"></i>
+                </div>
+            </div>
+
+            <!--right comment sectiom-->
+            <div class="secondSection">
+                <!--first comment -->
+                <div>
+                    <i class="fa fa-quote-left"></i>
+                    <p>We do not see nature with our eyes, but with our understandings and our hearts.</p>
+                    <h6>William Hazlitt</h6>
+                    <i class="fa fa-quote-right rightTranslate"></i>
+                </div>
+                <!--secondcomment -->
+                <div>
+                    <i class="fa fa-quote-left"></i>
+                    <p>No man has a good enough memory to be a successful liar.
+                    </p>
+                    <h6>Abraham Lincoln</h6>
+                    <i class="fa fa-quote-right rightTranslate"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!--last section-->
+        <div class="footer">
+            <div class="leftSection">
+                <h1>How Download the app?</h1>
+                <p>Just download the app from the store.Simple, nice and user-friendly
+                    application of the weather. Only relevant and useful information.
+                </p>
+                <div>
+                    <img src="images/appstor.png" alt="appStore">
+                    <img src="images/googleplay.png" alt="googleStore">
+                </div>
+            </div>
+            <img src="images/appdownload1.png" alt="appDownloadImg">
+        </div>
+    </div>
+
+    <!--footer section-->
+    <div class="footerSec">
+        <div class="content">
+            <div class="footerSection">
+                <img src="images/footer-logo.png" alt="footerLogo" class="titleLogo">
+                <div class="nav">
+                    <nav class="navBar">
+                        <a>Home</a>
+                        <a>Features</a>
+                        <a>Reviews</a>
+                        <a>Download</a>
+                    </nav>
+                </div>
+
+                <div class="imagesTag">
+                    <img src="images/facebook.png" alt="fbLogo" class="img">
+                    <img src="images/instagram.png" alt="instaLogo" class="img">
+                    <img src="images/google.png" alt="googleLogo" class="img">
+                </div>
+            </div>
+            <div class="hr">
+            </div>
+            <h6>All Rights Reserved</h6>
+        </div>
+    </div>
 </body>
 
 </html>
