@@ -1,0 +1,527 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+    background-image: url("images/bodybg.png");
+   
+}
+
+.viewport {
+   /*  display: block; */
+    background-image: url("images/homebg.png");
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.titleBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.nav {
+    width: 300px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navBar a {
+    color: white;
+    font-weight: bold;
+}
+
+.imagesTag {
+    display: flex;
+}
+
+.imagesTag img {
+    height: 20px;
+    padding-right: 20px;
+}
+
+.phoneImg {
+    height: 22em;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.details {
+    display: block;
+    color: white;
+}
+
+.button {
+    display: inline;
+    justify-content: space-evenly;
+}
+
+div input {
+    padding: 15px 20px;
+    margin-top: 10px;
+    background-color: rgb(0, 76, 255);
+    color: white;
+    border-top: 1000px;
+    cursor: pointer;
+    border-color: rgb(0, 76, 255);
+    border-radius: 4px;
+}
+
+div input:last-child {
+    margin-left: 10px;
+}
+
+div input:active {
+    background-color: rgb(255, 98, 0);
+    border-color: rgb(255, 98, 0);
+}
+
+div h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bodyClass {
+    display: block;
+    /* background-image: url("images/bodybg.png"); */
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.features h1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 102, 255);
+}
+
+.features h3 {
+    margin-left: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    color: gray;
+}
+
+.iconsDesc {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.titleWithDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+.iconFirst {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.titleWithDesc h3 {
+    align-items: flex-start;
+    width: 200px;
+    margin-top: 0px;
+}
+
+.titleWithDesc p {
+    align-items: flex-end;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: inherit;
+}
+
+.iconFirst img {
+    height: 3rem;
+    padding-top: 0px;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    margin-top: 100px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.screen h1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 102, 255);
+}
+
+.screen h3 {
+    margin-left: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    color: gray;
+}
+
+.img1 {
+    z-index: 1;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0.2px;
+    transform: rotateY(25deg);
+    height: 15em;
+    margin: auto;
+    margin-right: 0px;
+}
+
+.img2 {
+    z-index: 2;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0.2px;
+    transform: rotateY(15deg);
+    height: 20em;
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.img4 {
+    z-index: 2;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0.2px;
+    transform: rotateY(-15deg);
+    height: 20em;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.img5 {
+    z-index: 1;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0.2px;
+    transform: rotateY(-25deg);
+    height: 15em;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.img3 {
+    z-index: 3;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0.2px;
+    height: 30em;
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.cloud {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cloudDesc {
+    display: block;
+    margin-top: 100px;
+}
+
+.cloudDesc p {
+    width: 300px;
+}
+
+.temp {
+    display: flex;
+    border-radius: 100%;
+    background-color: rgb(0, 102, 255);
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    transform: translate(10px, 200px);
+    z-index: 3;
+}
+
+.temp h3 {
+    color: white;
+    margin: auto;
+}
+
+.cloudy {
+    display: flex;
+    border-radius: 100%;
+    background-color: rgb(255, 242, 0);
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    transform: translate(-30px, 70px);
+    z-index: 3;
+}
+
+.cloudy h3 {
+    color: white;
+    margin: auto;
+}
+
+.phoneIcon h1 {
+    transform: rotate(90deg) translate(-120px, 90px);
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    width: 120px;
+    font-size: 100px;
+    align-self: center;
+    z-index: 1;
+    color: rgba(128, 128, 128, 0.615);
+}
+
+.phoneIcon {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.phoneIcon img {
+    height: 350px;
+    z-index: 2;
+}
+
+.circles {
+    display: flex
+}
+
+.circles div {
+    display: flex;
+    border-radius: 100%;
+    border-style: dotted;
+    border-color: rgba(128, 128, 128, 0.307);
+    color: white;
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    justify-content: center;
+}
+
+.circles div h3 {
+    margin: auto;
+    color: rgba(128, 128, 128, 0.176);
+}
+
+.percent {
+    z-index: 3;
+    background-color: white;
+}
+
+.degree {
+    transform: translateX(-20px);
+    z-index: 2;
+    background-color: white;
+}
+
+.stat {
+    transform: translateX(-40px);
+    z-index: 1;
+}
+
+.stat h3 {
+    z-index: 1;
+}
+
+.sunny {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.rainy {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.reviewHeader {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.reviewHeader h3 {
+    margin: auto;
+    color: gray;
+
+}
+
+.reviewHeader h1 {
+    color: rgb(0, 102, 255);
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.footer {
+    background-color: rgba(7, 101, 242, 0.555);
+    /* z-index: -1; */
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 0;
+    padding-top: 5%;
+}
+
+.footer img {
+    height: inherit;
+    width: 400px;
+    padding-top: 50px;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.leftSection p {
+    width: inherit;
+    margin-top: 0;
+}
+
+.leftSection div {
+    display: flex;
+    justify-content: space-start;
+}
+
+.leftSection div img:first-child {
+    margin-right: 4px;
+    padding-top: 0px;
+}
+
+.leftSection div img:last-child {
+    margin-left: 4px;
+    padding-top: 0px;
+    ;
+}
+
+.leftSection div img {
+    width: 18%;
+    height: 10%;
+}
+
+.footerSec {
+    background-color: rgb(82, 82, 141);
+    background-image: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.footerSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.content h6 {
+    align-self: center;
+    margin-top: 0px;
+    color: gray;
+}
+
+.hr {
+    display: inline;
+    background-color: black;
+    margin: 30px 120px;
+    padding: 0.2px 1px;
+}
+
+i {
+    color: rgb(0, 102, 255);
+}
+
+.firstSection {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.secondSection {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.rightTranslate {
+    display: inline-block;
+    transform: translate(270px, -20px);
+}
+
+.reviews h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sunnyPhone div {
+    background-color: orange;
+}
+
+.rainyPhone div:first-child {
+    background-color: rgba(65, 98, 218, 0.612);
+}
+
+.rainyCircle {
+    background-color: rgba(27, 199, 185, 0.991);
+}
+
+.rainyPhone h1 {
+    transform: rotate(90deg) translate(-120px, 80px);
+    height: 50px;
+    font-size: 120px;
+}
+
+.sunnyPhone h1 {
+    transform: rotate(90deg) translate(-100px, 80px);
+    height: 50px;
+    font-size: 100px;
+}
